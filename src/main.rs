@@ -8,6 +8,11 @@ fn main() {
 
     let (_e, _f): (bool, bool) = (true, false);
 
+    // ..= 表示序列
+    for i in 1..=5{
+        println!("{}", i);
+    }
+
     print!("sum = {}\n", d);
     print!("e = {}\n", _e);
     print!("f = {}\n", _f);
