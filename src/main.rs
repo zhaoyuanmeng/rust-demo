@@ -30,12 +30,17 @@ use num::complex::Complex;
    let a = Complex { re: 2.1, im: -1.2 };
    let b = Complex::new(11.1, 22.2);
    let result = a + b;
-
+  let data = 100;
+  let str = "heloo";
    let  mut str = String::from("Hello");
-   str.push_str(",zyd");
-   println!("{} + {}i", result.re, result.im);
-   println!("{}",str);
-   println!("{}",test())
+  //  str.push_str(",zyd");
+  //  println!("{} + {}i", result.re, result.im);
+  //  println!("{}",str);
+  //  println!("{}",test());
+   test1(data);
+   println!("main---{}",data);
+   test_str(&mut str);
+   println!("main---{}",str);
  }
 
 
@@ -47,6 +52,18 @@ use num::complex::Complex;
   return *y;
 
  }
+
+
+fn test1(a: i32){
+  println!("test1---{}",a)
+}
+
+fn test_str(str:&mut String){
+  str.push_str("asdas");
+  println!("test_str{}",str);
+}
+
+
 
 
 
