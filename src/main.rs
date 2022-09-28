@@ -31,6 +31,12 @@ use num::complex::Complex;
    let b = Complex::new(11.1, 22.2);
    let result = a + b;
 
-   println!("{} + {}i", result.re, result.im)
+   let  mut str = String::from("Hello");
+   str.push_str(",zyd");
+   println!("{} + {}i", result.re, result.im);
+   println!("{}",str)
  }
+
+
+
 
