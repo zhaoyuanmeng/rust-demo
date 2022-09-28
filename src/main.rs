@@ -34,7 +34,18 @@ use num::complex::Complex;
    let  mut str = String::from("Hello");
    str.push_str(",zyd");
    println!("{} + {}i", result.re, result.im);
-   println!("{}",str)
+   println!("{}",str);
+   println!("{}",test())
+ }
+
+
+ fn test() -> i32 {
+
+  let x = 10;
+  let y = &x;
+
+  return *y;
+
  }
 
 
